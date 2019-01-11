@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX 25       //Implementing the char array with 25000 elements/bytes;
+#define MAX 25000       //Implementing the char array with 25000 elements/bytes;
 char arr[MAX];
 
 
@@ -54,10 +54,10 @@ void myfree(char * target){             //This function will free the target blo
 
 
 int main(){
-    printf("\n%p\n",mymalloc(5));
-    printf("\n%p\n",mymalloc(2));
+    printf("\n%p\n",mymalloc(500));
+    printf("\n%p\n",mymalloc(200));
     char*c=mymalloc(1);
     myfree(c);
-    printf("\n%p\n",mymalloc(5));
-    printf("\n%p\n",mymalloc(2));
+    printf("\n%p\n",mymalloc(500));
+    printf("\n%p\n",mymalloc(200));
 }
